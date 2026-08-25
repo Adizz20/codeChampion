@@ -849,10 +849,11 @@ const CSS = `
   --font-sans:'Inter',ui-sans-serif,system-ui,-apple-system,sans-serif;
   --radius:10px;
 }
+html,body,#root{ min-height:100%; margin:0; }
 *{box-sizing:border-box;}
 .ac-root{
   background:var(--bg-void); color:var(--text); font-family:var(--font-sans);
-  min-height:100%; padding:20px; display:flex; flex-direction:column; gap:18px;
+  min-height:100vh; padding:20px; display:flex; flex-direction:column; gap:18px;
   background-image:radial-gradient(circle at 10% 0%, rgba(61,220,132,0.05), transparent 40%);
 }
 .ac-root :focus-visible{ outline:2px solid var(--ac); outline-offset:2px; border-radius:4px; }
